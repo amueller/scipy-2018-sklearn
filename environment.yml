@@ -10,3 +10,6 @@ dependencies:
    - jupyter
    - ipython
    - pyzmq
+   - conda-forge::ipympl
+   - conda-forge::widgetsnbextension
+   - nodejs

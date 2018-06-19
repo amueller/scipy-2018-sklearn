@@ -76,6 +76,12 @@ The last one is important and you should be able to type:
 in your terminal window and see the notebook panel load in your web browser.
 Try opening and running a notebook from the material to see check that it works. Alternatively you can use Jupyter lab.
 
+The notebook ``18.In_Depth-Trees_and_Forests.ipynb`` required interactive
+plotting. To ensure a proper rendering, you have to install
+``jupyter-matplotlib`` extension. Refer to the
+[installation guideline](https://github.com/matplotlib/jupyter-matplotlib#installation)
+for PyPi and conda.
+
 For users who do not yet have the required packages installed, a relatively
 painless way to install all the requirements is to use a Python distribution
 such as [Anaconda](https://www.anaconda.com/download/ "Anaconda"), which includes
