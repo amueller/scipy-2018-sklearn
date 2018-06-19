@@ -8,5 +8,6 @@ scikit-learn>=0.18
 matplotlib>=2.0
 pandas>=0.19
 jupyter
+jupyterlab
 ipywidgets>=7.0
 ipympl
