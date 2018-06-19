@@ -9,6 +9,7 @@ install:
     - conda create -n testenv --yes pip python=3.6
     - source activate testenv
     - pip install -r requirements.txt
+    - jupyter labextension install @jupyter-widgets/jupyterlab-manager
 script:
     - python fetch_data.py
     - jupyter nbconvert --execute check_env.ipynb
