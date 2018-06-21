@@ -1,4 +1,5 @@
 import os
+import shutil
 import zipfile
 
 try:
@@ -55,6 +56,10 @@ def check_imdb(datasets_folder):
         tar.extractall(path=imdb_path)
         tar.close()
         os.remove(archive_path)
+
+        unsup_directory = os.path.join(imdb_path, 'aclImdb', 'train', 'unsup')
+        if os.path.exists(unsup_directory):
+            shutil.rmtree(unsup_directory)
 
     print("Checking that the IMDb train & test directories exist...")
     assert os.path.exists(train_path)
